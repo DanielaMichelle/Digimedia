@@ -1,0 +1,9 @@
+.dist{
+    display: flex;
+}
+.dist label{
+    margin: 0px 20px;
+}
+.enviar{
+    width: 100%;
+}

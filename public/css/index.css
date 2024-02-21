@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+/* ------------- Mis variables----------- */
+:root {
+  --first-color: #6434d1;
+  --second-color: #9e7fe2;
+  --shadow-color: #ff9e9e;
+  --shadow-color-light: white;
+  --color_banner_primero: #ff59ac;
+
+  --color_banner_primero2: #169ff4;
+
+  --c-brand: #f83691;
+  --c-brand-rgb: 248, 54, 145;
+  --c-dark: #303050;
+  --c-body: #636383;
+  --c-light: #f6f6f6;
+  --f-main: "Bai Jamjuree", sans-serif;
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+
+  --c-brand: #f83691;
+  --c-brand-rgb: 248, 54, 145;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
