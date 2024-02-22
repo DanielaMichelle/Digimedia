@@ -8,8 +8,7 @@
 </section>
 
 <section class="con-anun3 anuncio-diseno-desarrollo">
-    <p>Consolida tu presencia web, diseña con nosotros
-    <p>
+    <p>Consolida tu presencia web, diseña con nosotros</p>
     <div class="bota1">
         <a href="contacto.php" title="¡Contactanos!" class="boton__2">Incrementa tus ventas</a>
     </div>

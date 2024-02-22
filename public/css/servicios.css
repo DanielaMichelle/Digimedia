@@ -1,5 +1,6 @@
-/* Servicio de Diseño y Desarrollo */
-body .anuncio-diseno-desarrollo {
+/* Servicio Mensajes */
+body .anuncio-diseno-desarrollo,
+body .anuncio-branding-diseno {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,17 +9,31 @@ body .anuncio-diseno-desarrollo {
   padding: 2rem;
 }
 
-body .anuncio-diseno-desarrollo p {
+body .anuncio-diseno-desarrollo p,
+body .anuncio-branding-diseno p {
   color: white;
   margin: 0;
   font-size: 3vw;
+  text-align: center;
+  line-height: 3.5vw;
+  width: 80vw;
 }
 
-body .anuncio-diseno-desarrollo .bota1 {
+body .anuncio-branding-diseno span {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 4px;
+  color: white;
+  font-size: 3vw;
+}
+
+body .anuncio-diseno-desarrollo .bota1,
+body .anuncio-branding-diseno .bota1 {
   margin: 0;
 }
 
-body .anuncio-diseno-desarrollo .bota1 a {
+body .anuncio-diseno-desarrollo .bota1 a,
+body .anuncio-branding-diseno .bota1 a {
   text-decoration: none;
   width: fit-content;
   padding: 15px 25px;
@@ -32,27 +47,40 @@ body .anuncio-diseno-desarrollo .bota1 a {
   box-shadow: rgba(0, 0, 0, 0.4) 2px 5px 5px;
 }
 
-body .anuncio-diseno-desarrollo .bota1 a:hover {
+body .anuncio-diseno-desarrollo .bota1 a:hover,
+body .anuncio-branding-diseno .bota1 a:hover {
   cursor: pointer;
 }
 
 /* Media Queries */
-@media screen and (max-width: 425px) {
-  body .anuncio-diseno-desarrollo p {
-    font-size: 5vw;
-    text-align: center;
+@media screen and (max-width: 1024px) {
+  body .anuncio-diseno-desarrollo p,
+  body .anuncio-branding-diseno p,
+  body .anuncio-branding-diseno span {
+    font-size: 3vw;
   }
 }
 
 @media screen and (max-width: 767px) {
-  body .anuncio-diseno-desarrollo .bota1 a {
+  body .anuncio-diseno-desarrollo .bota1 a,
+  body .anuncio-branding-diseno .bota1 a {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  body .anuncio-diseno-desarrollo .bota1 a {
+  body .anuncio-diseno-desarrollo p,
+  body .anuncio-branding-diseno p,
+  body .anuncio-branding-diseno span {
+    font-size: 5vw;
+    line-height: 6.5vw;
+  }
+
+  body .anuncio-diseno-desarrollo .bota1 a,
+  body .anuncio-branding-diseno .bota1 a {
+    font-size: 10px;
     padding: 10px 20px;
-    margin-top: 5px;
+    line-height: 6vw;
+    margin-top: 20px;
   }
 }
