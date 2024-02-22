@@ -19,9 +19,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script> -->
+    <!-- font  "DM Sans"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,1000&family=Lato:wght@700;900&display=swap"
+        rel="stylesheet">
+
     <!-- Stylos Css propios -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -38,6 +42,12 @@
 
     ?>
 
+    <!-- modales servicios -->
+    <?php 
+        $servicio = isset($_GET['id']) ? $_GET['id'] : 1;
+        if(is_file("./public/view/modales/{$servicio}-modal.php")) require_once "./public/view/modales/{$servicio}-modal.php";
+        else require_once "./public/view/modales/1-modal.php"; 
+    ?>
 
     <section class="contenedor_rd_sls_">
         <div class="container">
@@ -198,13 +208,6 @@
     </div>
     <?php include_once './public/include/section_maps.php' ?>
     <!-- ?php include_once './public/include/section_form_contact_us.php' ? -->
-
-    <!-- modales servicios -->
-    <?php 
-        $servicio = isset($_GET['id']) ? $_GET['id'] : 0;
-        if(is_file("./public/view/modales/{$servicio}-modal.php")) require_once "./public/view/modales/{$servicio}-modal.php";
-        else require_once "./public/view/modales/0-modal.php"; 
-    ?>
 
 
     <?php include_once './public/assets/footer.php' ?>
