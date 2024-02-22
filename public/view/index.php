@@ -41,6 +41,10 @@
         </div>
     </section>
 
+    <!-- modal principal -->
+    <?php include_once './public/include/modal_main.php'?>
+
+
     <div class="banner-imag">
         <div class="container">
             <div class="pt-4"></div>
