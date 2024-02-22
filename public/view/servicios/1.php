@@ -14,3 +14,5 @@
         <a href="contacto.php" title="¡Contactanos!" class="boton__2">Incrementa tus ventas</a>
     </div>
 </section>
+
+<script src="/public/js/servicios-mensajes.js"></script>

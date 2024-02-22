@@ -14,6 +14,10 @@ body .anuncio-diseno-desarrollo p {
   font-size: 3vw;
 }
 
+body .anuncio-diseno-desarrollo .bota1 {
+  margin: 0;
+}
+
 body .anuncio-diseno-desarrollo .bota1 a {
   text-decoration: none;
   width: fit-content;
