@@ -37,6 +37,7 @@
 
 .container-hero p span {
   font-weight: 700;
+  font-size: 24px;
   text-shadow: 0px 1px 6px black;
 }
 
@@ -80,6 +81,31 @@
   text-decoration: none;
   color: #f83691;
   cursor: pointer;
+}
+
+/* Hero Servicios */
+.hero-servicios .container-hero {
+  width: 100vw;
+  margin: 0;
+  background: rgb(248, 54, 204);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 54, 204, 0.022846638655462215) 13%,
+    rgba(248, 54, 145, 0.5858718487394958) 100%
+  );
+
+  div {
+    display: flex;
+    justify-content: center;
+    h1 {
+      font-size: 6vw;
+      width: 60vw;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 16px;
+    }
+  }
 }
 
 .form {
@@ -129,7 +155,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .form {
     flex-direction: column; /* Cambio de dirección a columna en pantallas pequeñas */
   }
@@ -177,6 +203,14 @@
   .hero-redes-sociales a {
     font-size: 12px;
   }
+
+  /* Hero Servicios */
+  .hero-servicios .container-hero div h1 {
+    font-size: 8vw;
+    width: 90vw;
+    letter-spacing: 8px;
+    /* letter-spacing: 12px; */
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -205,6 +239,11 @@
   .hero-buttom {
     padding: 10px 20px;
     margin-top: 5px;
+  }
+
+  .hero-servicios .container-hero div h1 {
+    font-size: 10vw;
+    letter-spacing: 4px;
   }
 }
 
