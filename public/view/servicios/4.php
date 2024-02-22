@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero hero-servicios">
     <img src="./public/img/branding.webp" alt="">
     <div class="container-hero">
         <div>
