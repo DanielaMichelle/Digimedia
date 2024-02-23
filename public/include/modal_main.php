@@ -44,11 +44,6 @@
     }
 }
 
-/* 
-.modal-main h3 {
-    text-align: center;
-} */
-
 .modal-main p {
     font-size: 2vw;
     font-style: italic;
@@ -127,6 +122,64 @@
 
 .modal-main button:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .modal-main {
+        width: 90vw;
+    }
+
+    .modal-main h3 {
+        font-size: 4vw;
+    }
+
+    .modal-main p {
+        font-size: 3vw;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .modal-main .form-inputs {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .modal-main h3 {
+        font-size: 7vw;
+    }
+
+    .modal-main p {
+        font-size: 4vw;
+    }
+
+    .modal-main .form-inputs .form-group {
+        margin-top: 12px;
+    }
+
+    .modal-main .form-inputs .form-group input {
+        padding: 12px 24px;
+    }
+
+    .modal-main .form-inputs {
+        gap: 0rem;
+    }
+
+    .modal-main .form-inputs .form-group label {
+        font-size: 14px;
+    }
+
+    .modal-main .form-inputs .form-group input::placeholder {
+        font-size: 16px;
+    }
+
+    .modal-main button {
+        padding: 10px 20px;
+        margin-top: 1rem;
+        font-size: 20px;
+    }
 }
 </style>
 
