@@ -85,7 +85,7 @@
 
 /* Hero Servicios */
 .hero-servicios .container-hero {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   background: rgb(248, 54, 204);
   background: linear-gradient(
