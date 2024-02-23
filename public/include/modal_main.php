@@ -19,7 +19,6 @@
     border-radius: 40px;
     text-align: center;
     position: relative;
-
 }
 
 .modal-main figure {
@@ -48,6 +47,7 @@
     font-size: 2vw;
     font-style: italic;
     position: relative;
+    margin-bottom: 8px;
 }
 
 
@@ -64,7 +64,7 @@
 
 .modal-main .form-inputs .form-group input,
 .modal-main .form-inputs .form-group .dropdown a {
-    padding: 14px 24px;
+    padding: 12px 24px;
     border: none;
     border-radius: 50px;
 }
@@ -108,8 +108,8 @@
 
 .modal-main button {
     font-size: 23px;
-    margin-top: 2rem;
-    padding: 15px 50px;
+    margin-top: 1rem;
+    padding: 12px 50px;
     width: fit-content;
     border: none;
     color: white;
@@ -125,60 +125,131 @@
 }
 
 @media (max-width: 1024px) {
+
     .modal-main {
-        width: 90vw;
+        width: 80vw;
+        padding: 1rem
     }
 
     .modal-main h3 {
         font-size: 4vw;
+        padding: 1.3vw;
+        margin: 0;
+        padding: 0;
     }
 
     .modal-main p {
         font-size: 3vw;
+        font-size: 18px;
+    }
+
+    .modal-main button {
+        font-size: 16px;
+        padding: 0 50px;
+        height: 43px;
+        margin-bottom: 12px;
+    }
+
+    .modal-main .form-inputs {
+        row-gap: 0vw;
+    }
+
+    .modal-main .form-inputs .form-group label {
+        font-size: 12px;
+    }
+
+    .modal-main .form-inputs .form-group input,
+    .modal-main .form-inputs .form-group .dropdown a {
+        padding: 0px 24px;
+        height: 43px;
+    }
+
+    .modal-main .form-inputs .form-group input::placeholder {
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .modal-main .form-inputs .form-group label {
+        margin-bottom: 4px;
+    }
+
+    .modal-main .form-inputs .form-group .dropdown a,
+    .modal-main .form-inputs .form-group .dropdown ul li a {
+        font-size: 12px;
     }
 }
 
 
 
 @media (max-width: 768px) {
+
+    .modal-main {
+        width: 70vw;
+        padding: 1rem;
+    }
+
     .modal-main .form-inputs {
         grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 425px) {
-    .modal-main h3 {
-        font-size: 7vw;
-    }
-
-    .modal-main p {
-        font-size: 4vw;
-    }
-
-    .modal-main .form-inputs .form-group {
-        margin-top: 12px;
-    }
-
-    .modal-main .form-inputs .form-group input {
-        padding: 12px 24px;
-    }
-
-    .modal-main .form-inputs {
-        gap: 0rem;
-    }
-
-    .modal-main .form-inputs .form-group label {
-        font-size: 14px;
-    }
-
-    .modal-main .form-inputs .form-group input::placeholder {
-        font-size: 16px;
+    .modal-main .form-inputs .form-group input,
+    .modal-main .form-inputs .form-group .dropdown a {
+        height: 36px;
     }
 
     .modal-main button {
-        padding: 10px 20px;
-        margin-top: 1rem;
-        font-size: 20px;
+        height: 36px;
+        padding: 0 25px;
+
+    }
+
+    .modal-main h3 {
+        font-size: 3.5vw;
+        margin-top: 8px;
+
+    }
+
+    .modal-main p {
+        font-size: 16px;
+    }
+
+    .modal-main .form-inputs .form-group input::placeholder {
+        font-size: 10px;
+    }
+
+
+    .modal-main .form-inputs .form-group .dropdown a,
+    .modal-main .form-inputs .form-group .dropdown ul li a {
+        font-size: 10px;
+    }
+
+    .modal-main .form-inputs .form-group label {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .modal-main {
+        border-radius: 15px;
+    }
+
+    .modal-main h3 {
+        font-size: 4vw;
+    }
+
+    .modal-main p {
+        font-size: 14px;
+    }
+
+    .modal-main .form-inputs .form-group label {
+        font-size: 8px;
+    }
+
+    .modal-main button {
+        font-size: 14px;
     }
 }
 </style>

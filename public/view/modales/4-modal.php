@@ -19,6 +19,7 @@
     text-align: center;
     position: relative;
     width: 65vw;
+    padding-right: 5vw
 }
 
 .modal-main .modal-main-content {
@@ -58,6 +59,10 @@
     margin-bottom: 1rem;
 }
 
+.modal-main .modal-main-title-mobile {
+    display: none;
+}
+
 .modal-main p {
     font-size: 2vw;
     font-style: italic;
@@ -68,6 +73,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding-top: 3rem;
 }
 
 
@@ -91,28 +97,34 @@
 
 .modal-main .form-inputs .form-group input::placeholder {
     color: rgb(77 76 76);
-    font-size: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .modal-main .form-inputs .form-group label {
-
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 3px;
     padding-left: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .modal-main button {
-    font-size: 23px;
+    font-size: 16px;
     margin: 1rem auto;
-    padding: 15px 50px;
+    padding: 0 50px;
     width: fit-content;
     border: none;
     color: white;
     font-weight: 600;
     border-radius: 50px;
     background: rgb(25 135 232);
+    height: 49px;
+    margin-top: 12px;
+    margin-bottom: 28px;
 }
 
 .modal-main button:hover {
@@ -131,13 +143,12 @@
 
 .modal-main .modal-main-image img {
     width: 60%;
-    height: 60%;
-    border-radius: 50px;
+    height: 50%;
 }
 
 .modal-main .modal-main-image figcaption {
     margin-top: 1rem;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -149,20 +160,84 @@
 @media (max-width: 1024px) {
 
     .modal-main {
-        padding: 5rem 2rem 2rem;
+        padding: 1rem width: 80vw;
         width: 80vw;
     }
 
+    .modal-main .modal-main-form {
+        padding-top: 2rem;
+    }
+
+    .modal-main h3 {
+        font-size: 2vw;
+        padding: 1.3vw;
+        padding: 0;
+    }
+
+    .modal-main p {
+        font-size: 3vw;
+        font-size: 18px;
+    }
+
     .modal-main button {
+        font-size: 16px;
+        padding: 0 50px;
+        height: 43px;
+        margin-bottom: 12px;
+        margin-top: 12px;
+
+    }
+
+    .modal-main .form-inputs {
+        row-gap: 0vw;
+    }
+
+    .modal-main .form-inputs .form-group {
+        text-align: start;
         width: 90%;
+        height: 76px;
+    }
+
+    .modal-main .form-inputs .form-group label {
+        font-size: 12px;
+    }
+
+    .modal-main .form-inputs .form-group input,
+    .modal-main .form-inputs .form-group .dropdown a {
+        padding: 0px 24px;
+        height: 43px;
+    }
+
+    .modal-main .form-inputs .form-group input::placeholder {
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .modal-main .form-inputs .form-group label {
+        margin-bottom: 4px;
+    }
+
+    .modal-main .form-inputs .form-group .dropdown a,
+    .modal-main .form-inputs .form-group .dropdown ul li a {
+        font-size: 12px;
+    }
+
+    .modal-main .modal-main-image figcaption {
+        font-size: 2vw;
     }
 }
 
 @media (max-width: 768px) {
 
     .modal-main {
-        padding: 4rem 1rem 2rem;
-        width: 90vw;
+        width: 70vw;
+        padding: 1rem;
+    }
+
+    .modal-main .modal-main-form {
+        padding-top: 0;
     }
 
     .modal-main .modal-main-content {
@@ -174,48 +249,74 @@
     }
 
     .modal-main .form-inputs {
-        gap: 1rem;
+        gap: 0;
+        grid-template-columns: 1fr;
     }
 
-    .modal-main h3 {
-        font-size: 6vw;
-        margin-top: 2rem
+    .modal-main .form-inputs .form-group input {
+        height: 36px;
     }
 
     .modal-main button {
-        margin-top: 2rem;
+        height: 36px;
+        padding: 0 25px;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        font-size: 16px;
     }
 
+    .modal-main .modal-main-title-mobile {
+        display: block;
+        font-size: 3vw;
+        font-weight: bold;
+        font-family: "DM Sans", sans-serif;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-weight: 1000;
+        font-style: normal;
+        margin-bottom: 2vw;
+        margin-top: 3vw;
+    }
 
+    .modal-main .btn-cerrar {
+        right: -10px;
+        top: -10px;
+    }
+
+    .modal-main .form-inputs .form-group input::placeholder {
+        font-size: 10px;
+    }
+
+    .modal-main .form-inputs .form-group label {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 425px) {
+    .modal-main {
+        border-radius: 15px;
+    }
 
-    .modal-main h3 {
-        font-size: 6.5vw;
-        margin-top: 4rem;
+    .modal-main .modal-main-title-mobile {
+        font-size: 4.5vw;
+        margin-top: 4.5vw;
+    }
+
+    .modal-main .form-inputs .form-group label {
+        font-size: 8px;
     }
 
     .modal-main .form-inputs .form-group input {
         padding: 12px 24px;
+        height: 36px;
     }
 
     .modal-main .form-inputs {
         gap: 0rem;
     }
 
-    .modal-main .form-inputs .form-group label {
-        font-size: 14px;
-    }
-
-    .modal-main .form-inputs .form-group input::placeholder {
-        font-size: 16px;
-    }
-
     .modal-main button {
-        padding: 10px 20px;
-        margin-top: 1rem;
-        font-size: 20px;
+        margin-top: 12px;
+        font-size: 14px;
     }
 }
 </style>
@@ -225,13 +326,14 @@
         <figure class="btn-cerrar">
             <i class="fa solid fa-xmark fa-lg"></i>
         </figure>
-        <!-- <h3>¡DISEÑA TU CAMINO HACIA EL ÉXITO!</h3> -->
         <div class="modal-main-content">
+            <h3 class="modal-main-title-mobile">¡DISEÑA TU CAMINO HACIA EL ÉXITO!</h3>
+
 
             <figure class="modal-main-image">
                 <h3>¡DISEÑA TU CAMINO HACIA EL ÉXITO!</h3>
 
-                <img src="./public/img/modal-img-4.jpeg" alt="modal diseno y desarrollo">
+                <img src="./public/img/img3.jpg" alt="modal diseno y desarrollo">
                 <figcaption>¡Primera asesoría <span>GRATIS!</span></figcaption>
             </figure>
 
